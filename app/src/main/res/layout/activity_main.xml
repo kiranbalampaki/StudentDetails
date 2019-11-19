@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STUDENT DETAILS"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            style="@style/FormStyle"
+            android:id="@+id/etName"
+            android:hint="Enter Full Name"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            style="@style/FormStyle"
+            android:layout_marginBottom="2dp"
+            android:text="Select Gender"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            style="@style/FormStyle"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/RadioStyle"
+                android:id="@+id/rdoMale"
+                android:text="Male"/>
+
+            <RadioButton
+                style="@style/RadioStyle"
+                android:id="@+id/rdoFemale"
+                android:text="Female"
+                android:layout_marginLeft="10dp"/>
+
+            <RadioButton
+                style="@style/RadioStyle"
+                android:id="@+id/rdoOthers"
+                android:text="Others"
+                android:layout_marginLeft="10dp"/>
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinnerCountry"
+            style="@style/FormStyle"/>
+
+        <AutoCompleteTextView
+            style="@style/FormStyle"
+            android:id="@+id/autoCompleteTextView"
+            android:hint="Enter Batch"
+            android:layout_marginBottom="10dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        style="@style/FormStyle"
+        android:id="@+id/btnSave"
+        android:text="Save"
+        android:background="@drawable/button"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_marginBottom="0dp"
+            android:id="@+id/tvName"
+            style="@style/TextViewStyle"/>
+
+        <TextView
+            android:layout_marginBottom="0dp"
+            android:id="@+id/tvGender"
+            style="@style/TextViewStyle"/>
+
+        <TextView
+            android:layout_marginBottom="0dp"
+            android:id="@+id/tvCountry"
+            style="@style/TextViewStyle"/>
+
+        <TextView
+            android:layout_marginBottom="0dp"
+            android:id="@+id/tvBatch"
+            style="@style/TextViewStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>
